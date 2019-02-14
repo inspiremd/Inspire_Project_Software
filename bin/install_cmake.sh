@@ -8,7 +8,7 @@ export PROJECT_TOP_LEVEL=${INSPIRE_PROJECT_TOP_LEVEL}
 
 #-----------------------------------------------------
 # Define the directory path to the top level         -
-# OpenMM CMakeLists.txt file                         -
+# CMakeLists.txt file                                -
 #                                                    -
 #-----------------------------------------------------
 export PROJECT_TOP_LEVEL_CMAKE=${INSPIRE_PROJECT_TOP_LEVEL}/sources/cmake/cmake-3.13.3
@@ -30,7 +30,7 @@ MY_PYTHON_EXECUTABLE=$(which python3)
 #                                                    -
 #-----------------------------------------------------
 build_dir=${PROJECT_TOP_LEVEL}/cmake_cmake_build_dir
-if [ -d ${build_dir}  ];then
+if [ -d ${build_dir} ];then
     rm -rf ${build_dir}/*
 else
     mkdir ${build_dir}

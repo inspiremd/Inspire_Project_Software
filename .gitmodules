@@ -1,3 +1,6 @@
 [submodule "sources/openmm"]
 	path = sources/openmm
 	url = https://github.com/peastman/openmm.git
+[submodule "HOWTO"]
+	path = HOWTO
+	url = https://github.com/inspiremd/HOWTO.git

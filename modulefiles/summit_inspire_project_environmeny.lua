@@ -11,7 +11,7 @@ This module loads the environment for the INSPIRE project"
 local tmp_world_work = os.getenv("WORLDWORK")
 local my_inspire_project_top_level = pathJoin(tmp_world_work,"stf006","arnoldt","Inspire_Project")
 local my_inspire_project_bin = pathJoin(tmp_world_work,"stf006","arnoldt","Inspire_Project","bin")
-local my_machine = "Summit"
+local my_machine = "summit"
 
 -- We now define the dependent modules. 
 local gcc_module = "gcc/8.1.1"

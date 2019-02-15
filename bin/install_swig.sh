@@ -17,7 +17,7 @@ export PROJECT_TOP_LEVEL_SWIG=${INSPIRE_PROJECT_TOP_LEVEL}/sources/swig-3.0.5
 # Define the install location of swig.               -
 #                                                    -
 #-----------------------------------------------------
-export MY_INSTALL_PREFIX=${INSPIRE_PROJECT_TOP_LEVEL}/sw/summit/swig
+export MY_INSTALL_PREFIX=${INSPIRE_PROJECT_TOP_LEVEL}/sw/${INSPIRE_TARGET_MACHINE}/swig
 if [ -d ${MY_INSTALL_PREFIX} ];then
     rm -rf ${MY_INSTALL_PREFIX}/*
 else

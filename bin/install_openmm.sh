@@ -4,20 +4,20 @@
 # Define the project top level directory.            -
 #                                                    -
 #-----------------------------------------------------
-export PROJECT_TOP_LEVEL=$(pwd)
+export PROJECT_TOP_LEVEL=${INSPIRE_PROJECT_TOP_LEVEL}/sources/openmm
 
 #-----------------------------------------------------
 # Define the directory path to the top level         -
 # OpenMM CMakeLists.txt file                         -
 #                                                    -
 #-----------------------------------------------------
-export PROJECT_TOP_LEVEL_CMAKE=${PROJECT_TOP_LEVEL}/openmm
+export PROJECT_TOP_LEVEL_CMAKE=${PROJECT_TOP_LEVEL}
 
 #-----------------------------------------------------
 # Define the install location of OpenMM.             -
 #                                                    -
 #-----------------------------------------------------
-export MY_INSTALL_PREFIX=/ccs/home/arnoldt/sw/summit/OpenMM
+export MY_INSTALL_PREFIX=${INSPIRE_PROJECT_TOP_LEVEL}/sw/${INSPIRE_TARGET_MACHINE}/OpenMM
 
 #-----------------------------------------------------
 # Define the path to my python executable.           -

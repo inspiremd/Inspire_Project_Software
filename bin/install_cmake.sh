@@ -17,7 +17,7 @@ export PROJECT_TOP_LEVEL_CMAKE=${INSPIRE_PROJECT_TOP_LEVEL}/sources/cmake/cmake-
 # Define the install location of CMake.              -
 #                                                    -
 #-----------------------------------------------------
-export MY_INSTALL_PREFIX=${INSPIRE_PROJECT_TOP_LEVEL}/sw/summit/cmake
+export MY_INSTALL_PREFIX=${INSPIRE_PROJECT_TOP_LEVEL}/sw/${INSPIRE_TARGET_MACHINE}/cmake
 
 #-----------------------------------------------------
 # Define the path to my python executable.           -

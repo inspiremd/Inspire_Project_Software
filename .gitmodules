@@ -1,3 +1,3 @@
 [submodule "openmm"]
-	path = openmm
+	path = sources/openmm
 	url = https://github.com/peastman/openmm.git

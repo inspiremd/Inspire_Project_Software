@@ -46,19 +46,19 @@ load(cuda_module)
 load(python_module)
 load(boost_module)
 load(swig_module)
--- load(cmake_module)
+load(cmake_module)
 
 -- Here we print the environmnetal that were set:
-io.stderr:write("The following environmental variables are set: \n")
+io.stderr:write("The following environmental variables are set: \n\n")
 io.stderr:write("INSPIRE_PROJECT_TOP_LEVEL: ", os.getenv("INSPIRE_PROJECT_TOP_LEVEL"),'\n')
 io.stderr:write("INSPIRE_TARGET_MACHINE: ", os.getenv("INSPIRE_TARGET_MACHINE"),'\n')
 io.stderr:write("\n\n")
 
 -- Here we print a summary of what was loaded
-io.stderr:write('The following modules were loaded','\n')
+io.stderr:write('The following modules were loaded: \n\n')
 io.stderr:write('GCC version: ', gcc_module, '\n')
 io.stderr:write('CUDA version: ', cuda_module, '\n')
 io.stderr:write('Swig version: ', swig_module, '\n')
 io.stderr:write('CMAKE version: ', cmake_module, '\n')
 io.stderr:write('Python version: ', python_module, '\n')
-io.stderr:write('Boost version: ', boost_module, '\n')
+io.stderr:write('CMAKE version: ', cmake_module, '\n')

@@ -43,13 +43,13 @@ SRCDIR_INCLUDE = -I. -I$(SRCDIR)
 endif
 
 TARGET     =
-CC         = gcc
-CXX        = g++
+CC         = mpicc
+CXX        = mpiCC
 CPPFLAGS   = $(SRCDIR_INCLUDE)
 CFLAGS     = 
-CXXFLAGS   = -I/include/boost-0 
+CXXFLAGS   =  
 LDFLAGS    =
-prefix     = /ccs/home/arnoldt/sw/summit/swig
+prefix     = /gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sw/summit/swig
 exec_prefix= ${prefix}
 SRCS       =
 INCLUDES   =
@@ -124,7 +124,7 @@ CXXSHARED=      gcc -shared
 
 # This is used for building shared libraries with a number of C++
 # compilers.   If it doesn't work,  comment it out.
-CXXSHARED= g++ -shared 
+CXXSHARED= mpiCC -shared 
 
 OBJS      = $(SRCS:.c=.o) $(CXXSRCS:.cxx=.o)
 
@@ -299,9 +299,9 @@ ifeq (,$(PY3))
   PYTHON_LIB    = 
   PYTHON        = python $(PYTHON_FLAGS)
 else
-  PYTHON_INCLUDE= $(DEFS) -I/autofs/nccs-svm1_sw/summit/python/3.7/anaconda3/5.3.0/include/python3.7m -I/autofs/nccs-svm1_sw/summit/python/3.7/anaconda3/5.3.0/include/python3.7m
+  PYTHON_INCLUDE= $(DEFS) 
   PYTHON_LIB    = 
-  PYTHON        = python3 $(PYTHON_FLAGS)
+  PYTHON        = /sw/summit/python/3.7/anaconda3/5.3.0/bin/python3 $(PYTHON_FLAGS)
 endif
 
 # Extra Python specific linking options
@@ -310,7 +310,7 @@ ifeq (,$(PY3))
   PYTHON_LINK   = -l
 else
   PYTHON_DLNK   = 
-  PYTHON_LINK   = -lpython3.7
+  PYTHON_LINK   = 
 endif
 PYTHON_SO     = .so
 
@@ -630,7 +630,7 @@ java_clean:
 # There is a common makefile, 'Examples/javascript/js_example.mk' to simplify
 # create a configuration for a new example.
 
-ROOT_DIR = /ccs/home/arnoldt/sw/src/swig-3.0.5
+ROOT_DIR = /gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sources/swig-3.0.5
 JSINCLUDES =  
 JSDYNAMICLINKING =  
 NODEJS = 

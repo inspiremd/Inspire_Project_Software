@@ -3,17 +3,17 @@ Modules/emit.o: Modules/emit.cxx /usr/include/stdc-predef.h \
  /usr/include/stdio.h /usr/include/features.h /usr/include/sys/cdefs.h \
  /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
  /usr/include/gnu/stubs-64-v2.h \
- /autofs/nccs-svm1_sw/summit/gcc/6.4.0/lib/gcc/powerpc64le-none-linux-gnu/6.4.0/include/stddef.h \
+ /autofs/nccs-svm1_sw/summit/gcc/8.1.1/lib/gcc/powerpc64le-unknown-linux-gnu/8.1.1/include/stddef.h \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
- /autofs/nccs-svm1_sw/summit/gcc/6.4.0/lib/gcc/powerpc64le-none-linux-gnu/6.4.0/include/stdarg.h \
+ /autofs/nccs-svm1_sw/summit/gcc/8.1.1/lib/gcc/powerpc64le-unknown-linux-gnu/8.1.1/include/stdarg.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
  /usr/include/bits/stdio.h /usr/include/string.h /usr/include/xlocale.h \
- /autofs/nccs-svm1_sw/summit/gcc/6.4.0/include/c++/6.4.0/stdlib.h \
- /autofs/nccs-svm1_sw/summit/gcc/6.4.0/include/c++/6.4.0/cstdlib \
- /autofs/nccs-svm1_sw/summit/gcc/6.4.0/include/c++/6.4.0/powerpc64le-none-linux-gnu/bits/c++config.h \
- /autofs/nccs-svm1_sw/summit/gcc/6.4.0/include/c++/6.4.0/powerpc64le-none-linux-gnu/bits/os_defines.h \
- /autofs/nccs-svm1_sw/summit/gcc/6.4.0/include/c++/6.4.0/powerpc64le-none-linux-gnu/bits/cpu_defines.h \
+ /autofs/nccs-svm1_sw/summit/gcc/8.1.1/include/c++/8.1.1/stdlib.h \
+ /autofs/nccs-svm1_sw/summit/gcc/8.1.1/include/c++/8.1.1/cstdlib \
+ /autofs/nccs-svm1_sw/summit/gcc/8.1.1/include/c++/8.1.1/powerpc64le-unknown-linux-gnu/bits/c++config.h \
+ /autofs/nccs-svm1_sw/summit/gcc/8.1.1/include/c++/8.1.1/powerpc64le-unknown-linux-gnu/bits/os_defines.h \
+ /autofs/nccs-svm1_sw/summit/gcc/8.1.1/include/c++/8.1.1/powerpc64le-unknown-linux-gnu/bits/cpu_defines.h \
  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
  /usr/include/bits/waitstatus.h /usr/include/endian.h \
  /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
@@ -22,6 +22,7 @@ Modules/emit.o: Modules/emit.cxx /usr/include/stdc-predef.h \
  /usr/include/bits/sigset.h /usr/include/bits/time.h \
  /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
  /usr/include/alloca.h /usr/include/bits/stdlib-float.h \
+ /autofs/nccs-svm1_sw/summit/gcc/8.1.1/include/c++/8.1.1/bits/std_abs.h \
  /usr/include/assert.h ../Source/DOH/doh.h ../Source/Swig/swigfile.h \
  ../Source/Swig/swigopt.h ../Source/Swig/swigscan.h \
  ../Source/Swig/swigparm.h ../Source/Swig/swigtree.h \
@@ -48,7 +49,7 @@ Modules/swigmod.h:
 
 /usr/include/gnu/stubs-64-v2.h:
 
-/autofs/nccs-svm1_sw/summit/gcc/6.4.0/lib/gcc/powerpc64le-none-linux-gnu/6.4.0/include/stddef.h:
+/autofs/nccs-svm1_sw/summit/gcc/8.1.1/lib/gcc/powerpc64le-unknown-linux-gnu/8.1.1/include/stddef.h:
 
 /usr/include/bits/types.h:
 
@@ -60,7 +61,7 @@ Modules/swigmod.h:
 
 /usr/include/wchar.h:
 
-/autofs/nccs-svm1_sw/summit/gcc/6.4.0/lib/gcc/powerpc64le-none-linux-gnu/6.4.0/include/stdarg.h:
+/autofs/nccs-svm1_sw/summit/gcc/8.1.1/lib/gcc/powerpc64le-unknown-linux-gnu/8.1.1/include/stdarg.h:
 
 /usr/include/bits/stdio_lim.h:
 
@@ -72,15 +73,15 @@ Modules/swigmod.h:
 
 /usr/include/xlocale.h:
 
-/autofs/nccs-svm1_sw/summit/gcc/6.4.0/include/c++/6.4.0/stdlib.h:
+/autofs/nccs-svm1_sw/summit/gcc/8.1.1/include/c++/8.1.1/stdlib.h:
 
-/autofs/nccs-svm1_sw/summit/gcc/6.4.0/include/c++/6.4.0/cstdlib:
+/autofs/nccs-svm1_sw/summit/gcc/8.1.1/include/c++/8.1.1/cstdlib:
 
-/autofs/nccs-svm1_sw/summit/gcc/6.4.0/include/c++/6.4.0/powerpc64le-none-linux-gnu/bits/c++config.h:
+/autofs/nccs-svm1_sw/summit/gcc/8.1.1/include/c++/8.1.1/powerpc64le-unknown-linux-gnu/bits/c++config.h:
 
-/autofs/nccs-svm1_sw/summit/gcc/6.4.0/include/c++/6.4.0/powerpc64le-none-linux-gnu/bits/os_defines.h:
+/autofs/nccs-svm1_sw/summit/gcc/8.1.1/include/c++/8.1.1/powerpc64le-unknown-linux-gnu/bits/os_defines.h:
 
-/autofs/nccs-svm1_sw/summit/gcc/6.4.0/include/c++/6.4.0/powerpc64le-none-linux-gnu/bits/cpu_defines.h:
+/autofs/nccs-svm1_sw/summit/gcc/8.1.1/include/c++/8.1.1/powerpc64le-unknown-linux-gnu/bits/cpu_defines.h:
 
 /usr/include/stdlib.h:
 
@@ -115,6 +116,8 @@ Modules/swigmod.h:
 /usr/include/alloca.h:
 
 /usr/include/bits/stdlib-float.h:
+
+/autofs/nccs-svm1_sw/summit/gcc/8.1.1/include/c++/8.1.1/bits/std_abs.h:
 
 /usr/include/assert.h:
 

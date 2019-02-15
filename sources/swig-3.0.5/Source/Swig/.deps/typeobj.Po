@@ -3,10 +3,10 @@ Swig/typeobj.o: Swig/typeobj.c /usr/include/stdc-predef.h Swig/swig.h \
  /usr/include/features.h /usr/include/sys/cdefs.h \
  /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
  /usr/include/gnu/stubs-64-v2.h \
- /autofs/nccs-svm1_sw/summit/gcc/6.4.0/lib/gcc/powerpc64le-none-linux-gnu/6.4.0/include/stddef.h \
+ /autofs/nccs-svm1_sw/summit/gcc/8.1.1/lib/gcc/powerpc64le-unknown-linux-gnu/8.1.1/include/stddef.h \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
- /autofs/nccs-svm1_sw/summit/gcc/6.4.0/lib/gcc/powerpc64le-none-linux-gnu/6.4.0/include/stdarg.h \
+ /autofs/nccs-svm1_sw/summit/gcc/8.1.1/lib/gcc/powerpc64le-unknown-linux-gnu/8.1.1/include/stdarg.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
  /usr/include/bits/stdio.h /usr/include/string.h \
  /usr/include/bits/string.h /usr/include/bits/string2.h \
@@ -14,8 +14,8 @@ Swig/typeobj.o: Swig/typeobj.c /usr/include/stdc-predef.h Swig/swig.h \
  /usr/include/assert.h ../Source/DOH/doh.h Swig/swigfile.h Swig/swigopt.h \
  Swig/swigscan.h Swig/swigparm.h Swig/swigtree.h Swig/swigwrap.h \
  /usr/include/ctype.h /usr/include/endian.h /usr/include/bits/endian.h \
- /autofs/nccs-svm1_sw/summit/gcc/6.4.0/lib/gcc/powerpc64le-none-linux-gnu/6.4.0/include-fixed/limits.h \
- /autofs/nccs-svm1_sw/summit/gcc/6.4.0/lib/gcc/powerpc64le-none-linux-gnu/6.4.0/include-fixed/syslimits.h \
+ /autofs/nccs-svm1_sw/summit/gcc/8.1.1/lib/gcc/powerpc64le-unknown-linux-gnu/8.1.1/include-fixed/limits.h \
+ /autofs/nccs-svm1_sw/summit/gcc/8.1.1/lib/gcc/powerpc64le-unknown-linux-gnu/8.1.1/include-fixed/syslimits.h \
  /usr/include/limits.h
 
 /usr/include/stdc-predef.h:
@@ -36,7 +36,7 @@ Swig/swig.h:
 
 /usr/include/gnu/stubs-64-v2.h:
 
-/autofs/nccs-svm1_sw/summit/gcc/6.4.0/lib/gcc/powerpc64le-none-linux-gnu/6.4.0/include/stddef.h:
+/autofs/nccs-svm1_sw/summit/gcc/8.1.1/lib/gcc/powerpc64le-unknown-linux-gnu/8.1.1/include/stddef.h:
 
 /usr/include/bits/types.h:
 
@@ -48,7 +48,7 @@ Swig/swig.h:
 
 /usr/include/wchar.h:
 
-/autofs/nccs-svm1_sw/summit/gcc/6.4.0/lib/gcc/powerpc64le-none-linux-gnu/6.4.0/include/stdarg.h:
+/autofs/nccs-svm1_sw/summit/gcc/8.1.1/lib/gcc/powerpc64le-unknown-linux-gnu/8.1.1/include/stdarg.h:
 
 /usr/include/bits/stdio_lim.h:
 
@@ -88,8 +88,8 @@ Swig/swigwrap.h:
 
 /usr/include/bits/endian.h:
 
-/autofs/nccs-svm1_sw/summit/gcc/6.4.0/lib/gcc/powerpc64le-none-linux-gnu/6.4.0/include-fixed/limits.h:
+/autofs/nccs-svm1_sw/summit/gcc/8.1.1/lib/gcc/powerpc64le-unknown-linux-gnu/8.1.1/include-fixed/limits.h:
 
-/autofs/nccs-svm1_sw/summit/gcc/6.4.0/lib/gcc/powerpc64le-none-linux-gnu/6.4.0/include-fixed/syslimits.h:
+/autofs/nccs-svm1_sw/summit/gcc/8.1.1/lib/gcc/powerpc64le-unknown-linux-gnu/8.1.1/include-fixed/syslimits.h:
 
 /usr/include/limits.h:

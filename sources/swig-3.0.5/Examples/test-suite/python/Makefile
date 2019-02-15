@@ -5,7 +5,7 @@
 ifeq (,$(PY3))
   PYBIN = python
 else
-  PYBIN = python3
+  PYBIN = /sw/summit/python/3.7/anaconda3/5.3.0/bin/python3
 endif
 
 LANGUAGE     = python

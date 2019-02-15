@@ -5,7 +5,7 @@
 #define HAVE_BOOL 1
 
 /* define if the Boost library is available */
-/* #undef HAVE_BOOST */
+#define HAVE_BOOST /**/
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H 1
@@ -46,6 +46,9 @@
 /* Define to 1 if you have the <unistd.h> header file. */
 #define HAVE_UNISTD_H 1
 
+/* Define to 1 if your C compiler doesn't accept -c and -o together. */
+/* #undef NO_MINUS_C_MINUS_O */
+
 /* Name of package */
 #define PACKAGE "swig"
 
@@ -74,10 +77,10 @@
 #define STDC_HEADERS 1
 
 /* Compiler that built SWIG */
-#define SWIG_CXX "g++"
+#define SWIG_CXX "mpiCC"
 
 /* Directory for SWIG system-independent libraries */
-#define SWIG_LIB "/ccs/home/arnoldt/sw/summit/swig/share/swig/3.0.5"
+#define SWIG_LIB "/gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sw/summit/swig/share/swig/3.0.5"
 
 /* Directory for SWIG system-independent libraries (Unix install on native
    Windows) */

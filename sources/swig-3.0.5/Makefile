@@ -4,7 +4,7 @@
 
 .PHONY: ccache source swig
 
-prefix      = /ccs/home/arnoldt/sw/summit/swig
+prefix      = /gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sw/summit/swig
 exec_prefix = ${prefix}
 srcdir      = .
 datarootdir = ${prefix}/share
@@ -64,7 +64,7 @@ docs-ccache:
 
 skip-tcl	= test -n "1"
 skip-perl5	= test -n "1"
-skip-python	= test -n ""
+skip-python	= test -n "1"
 skip-java	= test -n ""
 skip-guile	= test -n "1"
 skip-mzscheme	= test -n "1"
@@ -88,7 +88,7 @@ skip-d		= test -n "1"
 skip-javascript	= test -n "1"
 
 # Additional dependencies for some tests
-skip-gcj        = test -n ""
+skip-gcj        = test -n "1"
 skip-android    = test -n "1"
 
 # Special errors test-case
@@ -101,8 +101,8 @@ skip-errors	= test -n ""
 ACTION = check
 NOSKIP =
 
-chk-set-swiglib		= SWIG_LIB=/ccs/home/arnoldt/sw/src/swig-3.0.5/$(srcdir)/Lib
-chk-set-swig		= SWIG=/ccs/home/arnoldt/sw/src/swig-3.0.5/$(TARGET)
+chk-set-swiglib		= SWIG_LIB=/gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sources/swig-3.0.5/$(srcdir)/Lib
+chk-set-swig		= SWIG=/gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sources/swig-3.0.5/$(TARGET)
 chk-set-env = $(chk-set-swiglib) $(chk-set-swig)
 
 check-aliveness:
@@ -487,10 +487,10 @@ $(srcdir)/Lib/swigwarn.swg: $(srcdir)/Source/Include/swigwarn.h
 # TARGETS: install & friends
 #####################################################################
 
-INSTALL         = /ccs/home/arnoldt/sw/src/swig-3.0.5/Tools/config/install-sh -c
+INSTALL         = /gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sources/swig-3.0.5/Tools/config/install-sh -c
 INSTALL_DATA    = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL} -m 755
-MKINSTDIRS      = /ccs/home/arnoldt/sw/src/swig-3.0.5/Tools/config/install-sh -m 0755 -d
+MKINSTDIRS      = /gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sources/swig-3.0.5/Tools/config/install-sh -m 0755 -d
 # Use standard autoconf approach to transform executable name using --program-prefix and --program-suffix
 transform	= s,x,x,
 

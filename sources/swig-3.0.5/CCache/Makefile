@@ -2,7 +2,7 @@ datarootdir = ${prefix}/share
 srcdir=.
 
 
-prefix=/ccs/home/arnoldt/sw/summit/swig
+prefix=/gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sw/summit/swig
 exec_prefix=${prefix}
 bindir=${exec_prefix}/bin
 mandir=${datarootdir}/man
@@ -11,7 +11,7 @@ PACKAGE_NAME=ccache-swig
 # Soft link test can be skipped on systems that don't support soft linking
 NOSOFTLINKSTEST=
 
-CC=gcc
+CC=mpicc
 CFLAGS=-g -O2 -Wall -W -I.
 SWIG=swig
 SWIG_LIB=../$(srcdir)/../Lib

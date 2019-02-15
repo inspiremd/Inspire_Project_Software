@@ -13,17 +13,17 @@
 # ----------------------------------------------------------------
 all: javascript
 
-CC         = gcc
+CC         = mpicc
 # HACK: under OSX a g++ compiled interpreter is seg-faulting when loading module libraries
 # with 'c++' it works... probably some missing flags?
 JSCXX      = $(CXX)
-CPPFLAGS   = -I/include/boost-0
+CPPFLAGS   = 
 CFLAGS     = 
 CXXFLAGS   = 
 LDFLAGS    =
 LINKFLAGS = -ldl
 
-ROOT_DIR = /ccs/home/arnoldt/sw/src/swig-3.0.5
+ROOT_DIR = /gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sources/swig-3.0.5
 JSINCLUDES =  
 JSDYNAMICLINKING =  
 JSV8ENABLED = 

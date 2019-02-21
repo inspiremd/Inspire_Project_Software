@@ -23,13 +23,13 @@ export MY_INSTALL_PREFIX=${INSPIRE_PROJECT_TOP_LEVEL}/sw/${INSPIRE_TARGET_MACHIN
 # Define the path to my python executable.           -
 #                                                    -
 #-----------------------------------------------------
-MY_PYTHON_EXECUTABLE=/sw/summit/python/3.7/anaconda3/5.3.0/bin/python3.7
+MY_PYTHON_EXECUTABLE=$(which python3)
 
 #-----------------------------------------------------
 # Define the cmake build directory.                  -
 #                                                    -
 #-----------------------------------------------------
-my_cmake_build_directory=${PROJECT_TOP_LEVEL}/cmake_build_directory
+my_cmake_build_directory=${PROJECT_TOP_LEVEL}/openmm_cmake_build_directory
 
 if [ -d ${my_cmake_build_directory} ];then
     rm -rf ${my_cmake_build_directory}
@@ -40,7 +40,7 @@ mkdir -p ${my_cmake_build_directory}
 cd ${my_cmake_build_directory}
 cmake ${PROJECT_TOP_LEVEL_CMAKE} \
       -DOPENMM_BUILD_CUDA_LIB=ON \
-      -DOPENNMM_CUDA_COMPILER=/sw/summit/cuda/9.2.148/bin/nvcc \
+      -DOPENNMM_CUDA_COMPILER=$(which nvcc) \
       -DCMAKE_INSTALL_PREFIX=${MY_INSTALL_PREFIX} \
       -DPYTHON_EXECUTABLE=${MY_PYTHON_EXECUTABLE} \
       -DCMAKE_C_COMPILER=mpicc \

@@ -47,7 +47,7 @@ cmake ${PROJECT_TOP_LEVEL_CMAKE} \
     -DCMAKE_BUILD_TYPE=Release
 
 if [ $? -eq 0 ];then
-    make
+    make -j 8
 fi
 
 if [ $? -eq 0 ];then

@@ -16,8 +16,8 @@ local my_machine = "Summit"
 -- We now define the dependent modules. 
 local gcc_module = "gcc/8.1.1"
 local cuda_module = "cuda/9.2.148"
-local swig_module = my_machine .. "/inspire/swig/3.0.5"
-local cmake_module = my_machine .. "/inspire/cmake/3.13.3"
+local swig_module = my_machine .. "/swig/3.0.5"
+local cmake_module = my_machine .. "/cmake/3.13.3"
 local python_module = "python/3.7.0-anaconda3-5.3.0"
 local boost_module = "boost/1.66.0"
 
@@ -49,16 +49,29 @@ load(swig_module)
 load(cmake_module)
 
 -- Here we print the environmnetal that were set:
-io.stderr:write("The following environmental variables are set: \n\n")
-io.stderr:write("INSPIRE_PROJECT_TOP_LEVEL: ", os.getenv("INSPIRE_PROJECT_TOP_LEVEL"),'\n')
-io.stderr:write("INSPIRE_TARGET_MACHINE: ", os.getenv("INSPIRE_TARGET_MACHINE"),'\n')
-io.stderr:write("\n\n")
+LmodMessage("The following environmental variables are set: \n\n")
+LmodMessage("INSPIRE_PROJECT_TOP_LEVEL: ", os.getenv("INSPIRE_PROJECT_TOP_LEVEL"),'\n')
+LmodMessage("INSPIRE_TARGET_MACHINE: ", os.getenv("INSPIRE_TARGET_MACHINE"),'\n')
+LmodMessage("\n\n")
 
 -- Here we print a summary of what was loaded
-io.stderr:write('The following modules were loaded: \n\n')
-io.stderr:write('GCC version: ', gcc_module, '\n')
-io.stderr:write('CUDA version: ', cuda_module, '\n')
-io.stderr:write('Swig version: ', swig_module, '\n')
-io.stderr:write('CMAKE version: ', cmake_module, '\n')
-io.stderr:write('Python version: ', python_module, '\n')
-io.stderr:write('CMAKE version: ', cmake_module, '\n')
+LmodMessage('The following is a summary of the modules that were loaded: \n\n')
+if isloaded(gcc_module) then
+    LmodMessage('GCC version: ', gcc_module, '\n')
+end
+
+if isloaded(cuda_module) then
+    LmodMessage('CUDA version: ', cuda_module, '\n')
+end
+
+if isloaded(swig_module) then
+    LmodMessage('Swig version: ', swig_module, '\n')
+end
+
+if isloaded(python_module) then
+    LmodMessage('Python version: ', python_module, '\n')
+end
+
+if isloaded(cmake_module) then
+    LmodMessage('CMAKE version: ', cmake_module, '\n')
+end

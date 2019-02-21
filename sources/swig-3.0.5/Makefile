@@ -4,7 +4,7 @@
 
 .PHONY: ccache source swig
 
-prefix      = /gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sw/summit/swig
+prefix      = /gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sw/Summit/swig
 exec_prefix = ${prefix}
 srcdir      = .
 datarootdir = ${prefix}/share

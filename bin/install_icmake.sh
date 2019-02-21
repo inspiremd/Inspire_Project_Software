@@ -17,7 +17,7 @@ export PROJECT_TOP_LEVEL_ICMAKE=${INSPIRE_PROJECT_TOP_LEVEL}/sources/icmake/icma
 # Define the install location of icMake.             -
 #                                                    -
 #-----------------------------------------------------
-export MY_INSTALL_PREFIX=${INSPIRE_PROJECT_TOP_LEVEL}/sw/summit/icmake
+export MY_INSTALL_PREFIX=${INSPIRE_PROJECT_TOP_LEVEL}/sw/${INSPIRE_TARGET_MACHINE}/icmake
 
 #-----------------------------------------------------
 # Change to the build directory and build cmake.     -

@@ -20,6 +20,7 @@ local swig_module = my_machine .. "/swig/3.0.5"
 local cmake_module = my_machine .. "/cmake/3.13.3"
 local python_module = "python/3.7.0-anaconda3-5.3.0"
 local boost_module = "boost/1.66.0"
+local autodocvina_module = "autodocvina/1.1.2"
 
 -- Load modules and set environmental variables. In general no edits 
 -- should be needed below this comment. 
@@ -47,6 +48,7 @@ load(python_module)
 load(boost_module)
 load(swig_module)
 load(cmake_module)
+load(autodocvina_module)
 
 -- Here we print the environmnetal that were set:
 LmodMessage("The following environmental variables are set: \n\n")
@@ -74,4 +76,8 @@ end
 
 if isloaded(cmake_module) then
     LmodMessage('CMAKE version: ', cmake_module, '\n')
+end
+
+if isloaded(autovinadoc_module) then
+    LmodMessage('AutoDock Vina version: ', autodocvina_module, '\n')
 end

@@ -4,3 +4,6 @@
 [submodule "HOWTO"]
 	path = HOWTO
 	url = https://github.com/inspiremd/HOWTO.git
+[submodule "sources/autodocvina"]
+	path = sources/autodocvina
+	url = https://code.ornl.gov/8nt/autodocvina.git

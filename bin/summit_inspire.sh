@@ -47,6 +47,6 @@ module load ${SUMMIT_CUDA_MODULE}
 module load ${SUMMIT_PYTHON_MODULE}
 module load ${SUMMIT_BOOST_MODULE}
 
-module use modulefiles/${INSPIRE_TARGET_MACHINE}/core_modulefiles
+module use modulefiles/${INSPIRE_TARGET_MACHINE}/core_modules
 module load ${INSPIRE_CMAKE_MODULE}
 

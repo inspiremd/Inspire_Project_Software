@@ -2,7 +2,7 @@
 
 help(
 [[
-This module loads the environment for the INSPIRE project"
+This module loads the production environment for the INSPIRE project for Summit"
 ]])
 
 

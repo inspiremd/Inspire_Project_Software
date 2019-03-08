@@ -21,6 +21,7 @@ local cmake_module = my_machine .. "/cmake/3.13.3"
 local python_module = "python/3.7.0-anaconda3-5.3.0"
 local boost_module = "boost/1.66.0"
 local autodocvina_module = "autodocvina/1.1.2"
+local openmm_module = "OpenMM/"
 
 -- Load modules and set environmental variables. In general no edits 
 -- should be needed below this comment. 

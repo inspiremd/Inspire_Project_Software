@@ -38,7 +38,7 @@ local boost_module = "boost/1.66.0"
 local cmake_module = my_machine .. "/core_modules/cmake/3.13.3"
 local swig_module = my_machine .. "/core_modules/swig/3.0.5"
 
-local autodocvina_module = my_machine .. "/autodocvina/1.1.2"
+local autodockvina_module = my_machine .. "/autodock_vina/1.1.2"
 local openmm_module = my_machine .. "/OpenMM/generic"
 
 -- Load modules and set environmental variables. In general no edits 
@@ -52,7 +52,7 @@ load(boost_module)
 load(swig_module)
 load(cmake_module)
 load(openmm_module)
-load(autodocvina_module)
+load(autodockvina_module)
 
 -- Here we print the environmnetal that were set:
 LmodMessage("The following environmental variables are set: \n\n")
@@ -78,14 +78,14 @@ if isloaded(python_module) then
     LmodMessage('Python version: ', python_module, '\n')
 end
 
--- if isloaded(cmake_module) then
+if isloaded(cmake_module) then
     LmodMessage('CMAKE version: ', cmake_module, '\n')
--- end
+end
 
--- if isloaded(autovinadoc_module) then
-    LmodMessage('AutoDock Vina version: ', autodocvina_module, '\n')
--- end
+if isloaded(autodockvina_module) then
+    LmodMessage('AutoDock Vina version: ', autodockvina_module, '\n')
+end
 
--- if isloaded(openmm_module) then
+if isloaded(openmm_module) then
     LmodMessage('OpenMM  version: ', openmm_module, '\n')
--- end
+end

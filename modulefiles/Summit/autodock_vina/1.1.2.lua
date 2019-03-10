@@ -7,3 +7,4 @@ local basepath = pathJoin(my_inspire_project_top_level,"sw",my_target_machine,"A
 
 setenv("OLCF_AUTODOCKVINA_ROOT", basepath)
 prepend_path("PATH", pathJoin(basepath,"bin"), ":")
+prepend_path("LD_LIBRARY_PATH", pathJoin(basepath,"lib"), ":" )

@@ -31,8 +31,8 @@ export PROJECT_TOP_LEVEL=${INSPIRE_PROJECT_SOFTWARE_TOP_LEVEL}
 # OpenMM CMakeLists.txt file                         -
 #                                                    -
 #-----------------------------------------------------
-export PROJECT_TOP_LEVEL_CMAKE=${PROJECT_TOP_LEVEL}/sources/autodock_vina
-echo "PROJECT_TOP_LEVEL_CMAKE: ${PROJECT_TOP_LEVEL_CMAKE}"
+export AUTODOCKVINA_TOP_LEVEL=${PROJECT_TOP_LEVEL}/sources/autodocvina
+echo "AUTODOCKVINA_TOP_LEVEL: ${AUTONDOCKVINA_TOP_LEVEL}"
 
 #-----------------------------------------------------
 # Define the install location of AutoDock_Vina.      -
@@ -57,7 +57,7 @@ mkdir -p ${my_cmake_build_directory}
 
 
 cd ${my_cmake_build_directory}
-cmake ${PROJECT_TOP_LEVEL_CMAKE} \
+cmake ${AUTODOCKVINA_TOP_LEVEL} \
       -DCMAKE_C_COMPILER=${CC} \
       -DCMAKE_CXX_COMPILER=${CXX}
 

@@ -51,8 +51,8 @@ load(python_module)
 load(boost_module)
 load(swig_module)
 load(cmake_module)
-load(openmm_module)
-load(autodockvina_module)
+-- load(openmm_module)
+-- load(autodockvina_module)
 
 -- Here we print the environmnetal that were set:
 LmodMessage("The following environmental variables are set: \n\n")

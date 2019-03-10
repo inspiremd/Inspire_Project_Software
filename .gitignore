@@ -1,2 +1,5 @@
 # Ignore object files
 *.o
+
+# Ignore the CMake cache files.
+autom4te.cache

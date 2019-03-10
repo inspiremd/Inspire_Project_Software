@@ -14,11 +14,6 @@ if [ -z ${INSPIRE_TARGET_MACHINE} ]; then
     exit 1
 fi
 
-my_build_directory="./build_cmake_autodocvina_summit"
-if [ -d ${my_build_directory} ];then
-    rm -rf ${my_build_directory}
-fi
-
 
 #-----------------------------------------------------
 # Define the project top level directory.            -

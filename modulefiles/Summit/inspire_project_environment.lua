@@ -9,22 +9,8 @@ This module loads the production environment for the INSPIRE project for Summit"
 
 -- Here we define the top level of the INSPIRE software stack
 local project_shared_directory ="/gpfs/alpine/proj-shared/bip178"
-local my_inspire_project_top_level = pathJoin(project_shared_directory,"Inspire_Project_Software")
-local my_inspire_project_bin = pathJoin(my_inspire_project_top_level,"bin")
-local my_machine = "Summit"
-
--- Export environmental variables. 
---
--- Critical note!
--- It is critial to export this variable before the dependent modules are loaded.
--- The environmental variable "INSPIRE_PROJECT_SOFTWARE_TOP_LEVEL" is needed by 
--- the other inspire modules to set proper paths to various packages, binaries, etc.
-setenv("INSPIRE_PROJECT_SOFTWARE_TOP_LEVEL", my_inspire_project_top_level)
-
--- We set the environmental variable INSPIRE_TARGET_MACHINE to indicate 
--- which machine we are building for. This is done so as to prepare
--- for future machins such as Frontier.
-setenv("INSPIRE_TARGET_MACHINE", my_machine)
+local my_inspire_project_bin = pathJoin(os.getenv("INSPIRE_PROJECT_SOFTWARE_TOP_LEVEL"),"bin")
+local my_machine = os.getenv("INSPIRE_TARGET_MACHINE")
 
 -- Modify paths to Inspire project bin directory.
 prepend_path("PATH",my_inspire_project_bin,":")
@@ -54,7 +40,7 @@ load(cmake_module)
 -- load(openmm_module)
 -- load(autodockvina_module)
 
--- Here we print the environmnetal that were set:
+-- Here we print the environmental that were set:
 LmodMessage("The following environmental variables are set: \n\n")
 LmodMessage("INSPIRE_PROJECT_SOFTWARE_TOP_LEVEL: ", os.getenv("INSPIRE_PROJECT_SOFTWARE_TOP_LEVEL"),'\n')
 LmodMessage("INSPIRE_TARGET_MACHINE: ", os.getenv("INSPIRE_TARGET_MACHINE"),'\n')

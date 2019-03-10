@@ -9,4 +9,4 @@
 export INSPIRE_PROJECT_SOFTWARE_TOP_LEVEL=/gpfs/alpine/proj-shared/bip178/Inspire_Project_Software
 export INSPIRE_TARGET_MACHINE="Summit"
 
-module use ${INSPIRE_PROJECT_SOFTWARE_TOP_LEVEL}/${INSPIRE_TARGET_MACHINE}
+module use ${INSPIRE_PROJECT_SOFTWARE_TOP_LEVEL}/modulefiles

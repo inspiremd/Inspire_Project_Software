@@ -34,7 +34,7 @@ echo "AUTODOCKVINA_TOP_LEVEL: ${AUTONDOCKVINA_TOP_LEVEL}"
 #                                                    -
 #-----------------------------------------------------
 export MY_INSTALL_PREFIX="${INSPIRE_PROJECT_SOFTWARE_TOP_LEVEL}/sw/${INSPIRE_TARGET_MACHINE}/AutoDockVina"
-export AUTODOCVINA_BOOST_ROOT=${OLCF_BOOST_ROOT}
+export AUTODOCKVINA_BOOST_ROOT=${OLCF_BOOST_ROOT}
 export AUTODOCVINA_INSTALLATION_PREFIX=${MY_INSTALL_PREFIX}
 export CC=mpicc
 export CXX=mpiCC

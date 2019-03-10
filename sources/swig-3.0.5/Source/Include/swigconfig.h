@@ -80,7 +80,7 @@
 #define SWIG_CXX "mpiCC"
 
 /* Directory for SWIG system-independent libraries */
-#define SWIG_LIB "/gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sw/Summit/swig/share/swig/3.0.5"
+#define SWIG_LIB "/gpfs/alpine/proj-shared/bip178/Inspire_Project_Software/sw/Summit/swig/share/swig/3.0.5"
 
 /* Directory for SWIG system-independent libraries (Unix install on native
    Windows) */

@@ -2,7 +2,7 @@ datarootdir = ${prefix}/share
 srcdir=.
 
 
-prefix=/gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sw/Summit/swig
+prefix=/gpfs/alpine/proj-shared/bip178/Inspire_Project_Software/sw/Summit/swig
 exec_prefix=${prefix}
 bindir=${exec_prefix}/bin
 mandir=${datarootdir}/man

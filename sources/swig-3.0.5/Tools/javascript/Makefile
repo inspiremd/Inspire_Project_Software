@@ -23,7 +23,7 @@ CXXFLAGS   =
 LDFLAGS    =
 LINKFLAGS = -ldl
 
-ROOT_DIR = /gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sources/swig-3.0.5
+ROOT_DIR = /gpfs/alpine/proj-shared/bip178/Inspire_Project_Software/sources/swig-3.0.5
 JSINCLUDES =  
 JSDYNAMICLINKING =  
 JSV8ENABLED = 

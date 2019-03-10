@@ -1,23 +1,38 @@
 #! /usr/bin/env bash
 
 #-----------------------------------------------------
+# Check the prequisite environment variables are     -
+# set.                                               -
+#-----------------------------------------------------
+if [ -z ${INSPIRE_PROJECT_SOFTWARE_TOP_LEVEL} ]; then
+    echo "The environment variable INSPIRE_PROJECT_SOFTWARE_TOP_LEVEL needs to be set. Exiting installation of cmake."
+    exit 1
+fi
+
+if [ -z ${INSPIRE_TARGET_MACHINE} ]; then
+    echo "The environment variable INSPIRE_TARGET_MACHINE needs to be set. Exiting installation of cmake."
+    exit 1
+fi
+
+#-----------------------------------------------------
 # Define the project top level directory.            -
 #                                                    -
 #-----------------------------------------------------
-export PROJECT_TOP_LEVEL=${INSPIRE_PROJECT_TOP_LEVEL}/sources/openmm
+export PROJECT_TOP_LEVEL=${INSPIRE_PROJECT_SOFTWARE_TOP_LEVEL}
 
 #-----------------------------------------------------
 # Define the directory path to the top level         -
 # OpenMM CMakeLists.txt file                         -
 #                                                    -
 #-----------------------------------------------------
-export PROJECT_TOP_LEVEL_CMAKE=${PROJECT_TOP_LEVEL}
+export PROJECT_TOP_LEVEL_CMAKE=${PROJECT_TOP_LEVEL}/sources/openmm
+echo "PROJECT_TOP_LEVEL_CMAKE: ${PROJECT_TOP_LEVEL_CMAKE}"
 
 #-----------------------------------------------------
 # Define the install location of OpenMM.             -
 #                                                    -
 #-----------------------------------------------------
-export MY_INSTALL_PREFIX=${INSPIRE_PROJECT_TOP_LEVEL}/sw/${INSPIRE_TARGET_MACHINE}/OpenMM
+export MY_INSTALL_PREFIX=${INSPIRE_PROJECT_SOFTWARE_TOP_LEVEL}/sw/${INSPIRE_TARGET_MACHINE}/OpenMM
 
 #-----------------------------------------------------
 # Define the path to my python executable.           -

@@ -13,6 +13,7 @@ if [ -z ${INSPIRE_TARGET_MACHINE} ]; then
     echo "The environment variable INSPIRE_TARGET_MACHINE needs to be set. Exiting installation of cmake."
     exit 1
 fi
+
 #-----------------------------------------------------
 # Define the project top level directory.            -
 #                                                    -

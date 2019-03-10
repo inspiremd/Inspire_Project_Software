@@ -49,7 +49,7 @@ CPPFLAGS   = $(SRCDIR_INCLUDE)
 CFLAGS     = 
 CXXFLAGS   =  
 LDFLAGS    =
-prefix     = /gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sw/Summit/swig
+prefix     = /gpfs/alpine/proj-shared/bip178/Inspire_Project_Software/sw/Summit/swig
 exec_prefix= ${prefix}
 SRCS       =
 INCLUDES   =
@@ -630,7 +630,7 @@ java_clean:
 # There is a common makefile, 'Examples/javascript/js_example.mk' to simplify
 # create a configuration for a new example.
 
-ROOT_DIR = /gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sources/swig-3.0.5
+ROOT_DIR = /gpfs/alpine/proj-shared/bip178/Inspire_Project_Software/sources/swig-3.0.5
 JSINCLUDES =  
 JSDYNAMICLINKING =  
 NODEJS = 

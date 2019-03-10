@@ -4,7 +4,7 @@
 
 .PHONY: ccache source swig
 
-prefix      = /gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sw/Summit/swig
+prefix      = /gpfs/alpine/proj-shared/bip178/Inspire_Project_Software/sw/Summit/swig
 exec_prefix = ${prefix}
 srcdir      = .
 datarootdir = ${prefix}/share
@@ -101,8 +101,8 @@ skip-errors	= test -n ""
 ACTION = check
 NOSKIP =
 
-chk-set-swiglib		= SWIG_LIB=/gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sources/swig-3.0.5/$(srcdir)/Lib
-chk-set-swig		= SWIG=/gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sources/swig-3.0.5/$(TARGET)
+chk-set-swiglib		= SWIG_LIB=/gpfs/alpine/proj-shared/bip178/Inspire_Project_Software/sources/swig-3.0.5/$(srcdir)/Lib
+chk-set-swig		= SWIG=/gpfs/alpine/proj-shared/bip178/Inspire_Project_Software/sources/swig-3.0.5/$(TARGET)
 chk-set-env = $(chk-set-swiglib) $(chk-set-swig)
 
 check-aliveness:
@@ -487,10 +487,10 @@ $(srcdir)/Lib/swigwarn.swg: $(srcdir)/Source/Include/swigwarn.h
 # TARGETS: install & friends
 #####################################################################
 
-INSTALL         = /gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sources/swig-3.0.5/Tools/config/install-sh -c
+INSTALL         = /gpfs/alpine/proj-shared/bip178/Inspire_Project_Software/sources/swig-3.0.5/Tools/config/install-sh -c
 INSTALL_DATA    = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL} -m 755
-MKINSTDIRS      = /gpfs/alpine/world-shared/stf006/arnoldt/Inspire_Project/sources/swig-3.0.5/Tools/config/install-sh -m 0755 -d
+MKINSTDIRS      = /gpfs/alpine/proj-shared/bip178/Inspire_Project_Software/sources/swig-3.0.5/Tools/config/install-sh -m 0755 -d
 # Use standard autoconf approach to transform executable name using --program-prefix and --program-suffix
 transform	= s,x,x,
 

@@ -37,6 +37,7 @@ export SUMMIT_BOOST_MODULE="boost/1.66.0"
 #                                                    -
 #-----------------------------------------------------
 export INSPIRE_CMAKE_MODULE="cmake/3.13.3"
+export INSPIRE_SWIG_MODULE="swig/3.0.5"
 
 #-----------------------------------------------------
 # Set the programming environment.                   -
@@ -49,4 +50,4 @@ module load ${SUMMIT_BOOST_MODULE}
 
 module use modulefiles/${INSPIRE_TARGET_MACHINE}/core_modules
 module load ${INSPIRE_CMAKE_MODULE}
-
+module load ${INSPIRE_SWIG_MODULE}

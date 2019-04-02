@@ -1,4 +1,6 @@
 To set up the INSPIRE project environment, run the following commands
 
-module use /gpfs/alpine/proj-shared/bip178/Inspire_Project_Software/modulefiles
-module load inspire_project_environment
+source /gpfs/alpine/proj-shared/bip178/Inspire_Project_Software/bin/summit_inspire_environmental_variables.sh
+module load Summit/inspire_project_environment
+
+module avail Summit
